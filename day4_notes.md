@@ -4,7 +4,7 @@
 **目标**：阅读《Automate the Boring Stuff with Python》Ch1–2（中文翻译版可查）学习python基础知识，并写脚本列出当前目录下所有 .txt 文件。
 
 ---
-
+```
 变量名只包含字母、数字、下划线，并且不能以数字打头（且大小写敏感）
 
 布尔运算符优先级是：not > and > or （非>与>或）
@@ -47,4 +47,4 @@ for path,dirs,files in os.walk(os.getcwd()):
 	for file in files:
 		if file.endsiwth(".txt"):
 			print(os.path.join(path,file))		#呈现完整路径
-
+```
