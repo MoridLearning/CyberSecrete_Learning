@@ -5,6 +5,7 @@
 
 ---
 
+<pre>
 ## 今日接触到的Linux指令：
 - grep、sort、uniq、管道的基础概念
 
@@ -34,6 +35,7 @@
 
 - `uniq 	-c `				>> 显示重复行**重复次数**
 输出如下：
+</pre>
 ```
      10 0ZdojRHKYMZ2HH75mmFbUIBR8K8DRJTx
      10 1FZh48ZaVPQSphjoyxSMLzIQbXp7oKKT
@@ -45,7 +47,8 @@
 ```
 
 
+<pre>
 ### 管道**"|"**的基本知识：
 - `command 1 | command 2 `		>> 将前面指令处理后的标准数据传递给后方指令处理
-
+</pre>
 
