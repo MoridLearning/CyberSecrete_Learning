@@ -31,6 +31,6 @@
 - `echo  "XXXX" | base64 -d  `    对字符进行解码，"XXXX"为base64编码后形成的文本
 - 例子：
 ```
-echo "Hello" | base64				# 输出：SGVsbG8K
+echo "Hello" | base64			# 输出：SGVsbG8K
 echo "SGVsbG8K" | base64 -d		# 输出：Hello
 ```
