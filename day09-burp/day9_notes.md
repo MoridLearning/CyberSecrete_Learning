@@ -28,23 +28,23 @@ Host: httpbin.org
 ## 特殊情况：
 - 浏览器直连服务器：
 - HTTP请求头路径为相对路径
-```
+	```
 GET /get?q=test HTTP/1.1
 Host: httpbin.org
 ```
 
 - 浏览器经由代理连接服务器：
 - HTTP请求头路径为绝对路径（因为浏览器不知道代理最终会连到哪个目标，就把完整 URL 给 Burp，由 Burp 再去帮你转发。）
-```
+	```
 GET http://httpbin.org/get?q=test HTTP/1.1
 ```
 ### 两种场景
 - 场景 A：开着 Clash，上游代理转发
 - 你在 Burp 配置了上游代理 (Upstream proxy)，所以 Burp 收到浏览器的请求后，会自己帮忙把请求再发给 Clash（或者 Clash 之后的目标网站）。
-- `对浏览器来说：Burp 就像是“最终服务器”，它不需要知道后面还有 Clash，于是就用**相对路径**`
+- `对浏览器来说：Burp 就像是“最终服务器”，它不需要知道后面还有 Clash，于是就用`**相对路径**
 - 因为浏览器只需要把请求交给 Burp，由 Burp 去处理后续转发。
 - 所以你看到的是：
-```
+	```
 GET /get?q=test HTTP/1.1
 Host: httpbin.org
 ```
@@ -52,8 +52,8 @@ Host: httpbin.org
 - 场景 B：没有 Clash，本地端口直连 Burp (8080)
 - `浏览器认为 127.0.0.1:8080 就是一个 HTTP 代理（它不会猜 Burp 是终点）`
 - 按照 HTTP 规范，浏览器必须把**完整 URL**放在请求行里告诉代理：
-```
+	```
 GET http://httpbin.org/get?q=test HTTP/1.1
 ```
-- `因为如果只给 `/get?q=test`，代理根本不知道要去哪个主机（Host）。`
+- `因为如果只给 /get?q=test，代理根本不知道要去哪个主机（Host）。`
 - 所以在这种直连代理的模式下，你看到的是**绝对路径**。
