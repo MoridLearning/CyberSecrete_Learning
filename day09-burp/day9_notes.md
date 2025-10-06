@@ -9,9 +9,11 @@
 - `http://httpbin.org/get?q=test&lang=zh `
 
 ## 拦截到的请求头：
-```GET /get?q=test&lang=zh HTTP/2 
+```
+GET /get?q=test&lang=zh HTTP/2 
 Host: httpbin.org
-……```
+……
+```
 
 ### 解释：
 - 请求头里的`/get`是路径，域名在下方的`Host`中
