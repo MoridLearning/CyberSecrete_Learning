@@ -1,0 +1,18 @@
+:authority: ab.chatgpt.com
+:method: POST
+:path: /v1/rgstr?k=client-nb0qtYlZuy2tCMN5s5ncnuIBCJncjRViT0IzFm7GqST&st=javascript-client&sv=3.17.0&t=1760185397664&sid=18044b0e-a4e4-45f3-b7ba-d0bfd0c813ed&ec=102&gz=1
+:scheme: https
+accept: */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+content-length: 6833
+origin: https://chatgpt.com
+priority: u=1, i
+referer: https://chatgpt.com/
+sec-ch-ua: "Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-site
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
