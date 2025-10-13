@@ -17,7 +17,7 @@
 
 ### readlines：
 - `file.readlines()`		将文件内容按行提取并整合到一个列表中
-- `file.`**readline()**		仅读取文件中第一行内容并保留为字符串
+- `file.readline()`		仅读取文件中第一行内容并保留为字符串
 
 ### write：
 - `file.write("文本")`		将文本内容写入文件中，覆盖还是追加取决于打开文件的方式
