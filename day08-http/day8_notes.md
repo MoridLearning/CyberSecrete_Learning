@@ -5,7 +5,7 @@
 
 ---
 
-## 请求头
+## 请求头：
 
 ### Host：
 - 告诉服务器访问的是哪个域名（同一台服务器可能有多个站点）
@@ -27,7 +27,6 @@
 
 ### Authorization：
 - 携带用户的身份凭证，告诉服务器「我是谁」（如 Bearer token）
-
 #### Bearer Token（最常见）：
 - 格式：Authorization: Bearer <token>
 - token 是一串随机生成的字符串（例如 JWT），相当于临时的身份证。
@@ -37,14 +36,13 @@
 ### Cookie / Set-Cookie：
 - 浏览器和服务器之间维持状态的关键
 - Cookie跟网页绑定，浏览器访问网站时会自动把对应网站的 cookie 附带在请求里。
-
 #### Cookie的运用流程：
 - 第一次访问，服务器返回响应头里带 Set-Cookie：
 - `Set-Cookie: sessionid=abc123; Path=/; HttpOnly `
 - 浏览器收到后，把这段信息存下来
 - 第二次访问，浏览器自动带上：
 - `Cookie: sessionid=abc123 `
-- 服务器根据sessionid识别出你是谁
+- 服务器根据`sessionid`识别出你是谁
 
 ### Cache-Control（常和 Last-Modified / ETag 一起出现）：
 - 控制资源是否可缓存、缓存多久，例如 `Cache-Control: max-age=3600 `（缓存 1 小时）。

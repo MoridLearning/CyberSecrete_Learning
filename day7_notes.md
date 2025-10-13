@@ -5,8 +5,8 @@
 
 ---
 
-## 文件特性
-- 有些文件虽然是**二进制格式**，但里面可能夹杂着人类能看懂的** ASCII 文本**。
+## 文件特性：
+- 有些文件虽然是**二进制格式**，但里面可能夹杂着人类能看懂的**ASCII 文本**。
 - `cat  [二进制文件] ` 会收获到一堆乱码，无法被人类直接解读
 
 
@@ -30,7 +30,7 @@
 - ` base64  -d  [文件] `    可对具体文件进行解码
 - `echo  "XXXX" | base64 -d  `    对字符进行解码，"XXXX"为base64编码后形成的文本
 - 例子：
-```
-echo "Hello" | base64			# 输出：SGVsbG8K
-echo "SGVsbG8K" | base64 -d		# 输出：Hello
-```
+	```
+	echo "Hello" | base64			# 输出：SGVsbG8K
+	echo "SGVsbG8K" | base64 -d		# 输出：Hello
+	```

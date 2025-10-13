@@ -30,13 +30,13 @@
 	- `uniq -c `：  	显示重复行**重复次数**
 		- 输出如下：
 			```
-     				10 0ZdojRHKYMZ2HH75mmFbUIBR8K8DRJTx
-     				10 1FZh48ZaVPQSphjoyxSMLzIQbXp7oKKT
-     				10 2hzECtVb4C4PLXGIgYH6eVBLBJcJmym3
-     				10 2zJA8BRN8FYM2cVW6K7vTIcfpdzfXLLF
-     				10 3mFwCPqJL0HVwTZ83w5nNV079jFXcfB6
-     				10 3oYgS0Otrx9fUslMcV8VgGzWgHdh7HEf
-      				1 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+     			10 0ZdojRHKYMZ2HH75mmFbUIBR8K8DRJTx
+     			10 1FZh48ZaVPQSphjoyxSMLzIQbXp7oKKT
+     			10 2hzECtVb4C4PLXGIgYH6eVBLBJcJmym3
+     			10 2zJA8BRN8FYM2cVW6K7vTIcfpdzfXLLF
+     			10 3mFwCPqJL0HVwTZ83w5nNV079jFXcfB6
+     			10 3oYgS0Otrx9fUslMcV8VgGzWgHdh7HEf
+      			1 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 			```
 
 
