@@ -1,0 +1,170 @@
+HTTP/2 200 OK
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 13140
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>
+        <link href=/resources/css/labsBlog.css rel=stylesheet>
+        <title>Stored XSS into anchor href attribute with double quotes HTML-encoded</title>
+    </head>
+    <body>
+        <script src="/resources/labheader/js/labHeader.js"></script>
+        <div id="academyLabHeader">
+            <section class='academyLabBanner is-solved'>
+                <div class=container>
+                    <div class=logo></div>
+                        <div class=title-container>
+                            <h2>Stored XSS into anchor <code>href</code> attribute with double quotes HTML-encoded</h2>
+                            <a class=link-back href='https://portswigger.net/web-security/cross-site-scripting/contexts/lab-href-attribute-double-quotes-html-encoded'>
+                                Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;
+                                <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                    <g>
+                                        <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                        <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class='widgetcontainer-lab-status is-solved'>
+                            <span>LAB</span>
+                            <p>Solved</p>
+                            <span class=lab-status-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id=notification-labsolved class=notification-labsolved>
+                <div class=container>
+                    <h4>Congratulations, you solved the lab!</h4>
+                    <div>
+                        <span>
+                            Share your skills!
+                        </span>
+                        <a class=button href='https://twitter.com/intent/tweet?text=I+completed+the+Web+Security+Academy+lab%3a%0aStored+XSS+into+anchor+href+attribute+with+double+quotes+HTML-encoded%0a%0a@WebSecAcademy%0a&url=https%3a%2f%2fportswigger.net%2fweb-security%2fcross-site-scripting%2fcontexts%2flab-href-attribute-double-quotes-html-encoded&related=WebSecAcademy,Burp_Suite'>
+                    <svg xmlns='http://www.w3.org/2000/svg' width=24 height=24 viewBox='0 0 20.44 17.72'>
+                        <title>twitter-button</title>
+                        <path d='M0,15.85c11.51,5.52,18.51-2,18.71-12.24.3-.24,1.73-1.24,1.73-1.24H18.68l1.43-2-2.74,1a4.09,4.09,0,0,0-5-.84c-3.13,1.44-2.13,4.94-2.13,4.94S6.38,6.21,1.76,1c-1.39,1.56,0,5.39.67,5.73C2.18,7,.66,6.4.66,5.9-.07,9.36,3.14,10.54,4,10.72a2.39,2.39,0,0,1-2.18.08c-.09,1.1,2.94,3.33,4.11,3.27A10.18,10.18,0,0,1,0,15.85Z'></path>
+                    </svg>
+                        </a>
+                        <a class=button href='https://www.linkedin.com/sharing/share-offsite?url=https%3a%2f%2fportswigger.net%2fweb-security%2fcross-site-scripting%2fcontexts%2flab-href-attribute-double-quotes-html-encoded'>
+                    <svg viewBox='0 0 64 64' width='24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg'
+                        <title>linkedin-button</title>
+                        <path d='M2,6v52c0,2.2,1.8,4,4,4h52c2.2,0,4-1.8,4-4V6c0-2.2-1.8-4-4-4H6C3.8,2,2,3.8,2,6z M19.1,52H12V24.4h7.1V52z    M15.6,18.9c-2,0-3.6-1.5-3.6-3.4c0-1.9,1.6-3.4,3.6-3.4c2,0,3.6,1.5,3.6,3.4C19.1,17.4,17.5,18.9,15.6,18.9z M52,52h-7.1V38.2   c0-2.9-0.1-4.8-0.4-5.7c-0.3-0.9-0.8-1.5-1.4-2c-0.7-0.5-1.5-0.7-2.4-0.7c-1.2,0-2.3,0.3-3.2,1c-1,0.7-1.6,1.6-2,2.7   c-0.4,1.1-0.5,3.2-0.5,6.2V52h-8.6V24.4h7.1v4.1c2.4-3.1,5.5-4.7,9.2-4.7c1.6,0,3.1,0.3,4.5,0.9c1.3,0.6,2.4,1.3,3.1,2.2   c0.7,0.9,1.2,1.9,1.4,3.1c0.3,1.1,0.4,2.8,0.4,4.9V52z'/>
+                    </svg>
+                        </a>
+                        <a href='https://portswigger.net/web-security/cross-site-scripting/contexts/lab-href-attribute-double-quotes-html-encoded'>
+                            Continue learning 
+                            <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                <g>
+                                    <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                    <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div theme="blog">
+            <section class="maincontainer">
+                <div class="container is-page">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href=/>Home</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <div class="blog-post">
+                    <img src="/image/blog/posts/23.jpg">
+                    <h1>The Peopleless Circus</h1>
+                    <p><span id=blog-author>Si Patch</span> | 27 September 2025</p>
+                    <hr>
+                    <p>When the leaflet dropped through my letterbox I thought it was a joke. The Peopleless Circus was in town. At the risk of sounding like a negative Nancy, I couldn&apos;t help thinking what is the world coming to. I&apos;m not keen on all these plans for driverless, or driver assisted, vehicles mostly from a safety aspect. But what on earth would a peopleless circus consist of? Of course, I had to go, curiosity killed the cat and all that.</p>
+                    <p>On arrival, you&apos;d be forgiven for thinking it was the same as any other circus, nice stripey big top and the aroma of candyfloss. But on entering the tent things couldn&apos;t have been more different. An android greeted me with a refreshments tray, I was asked to insert my ticket into its mouth and was offered &apos;a nice cup of java&apos;. Java seemed an odd word to be programmed into the droid; I would have expected, skinny decaf latte, cappa, or any number of coffees now available in popular outlets. To be honest with the technology I expected I should have been able to choose my own beans and watch the droid grind them.</p>
+                    <p>I took my seat, front row no less, and among an excited throng of people anticipated what would happen next. The lights dimmed, the audience hushed, and into the ring trotted a horse, not a real horse, a huge wooden horse - not dissimilar in size and appearance to the Trojan horse of Troy - with an aerial attached to its backend. A green light appeared at the tip of the aerial and tiny doors flew open as hundreds of remote-controlled bugs swarmed the ring. That was pretty scary, much more terrifying than lions and tigers. The really clever part came as the bugs snapped together like lego and formed a network of tunnels.</p>
+                    <p>It all seemed to be going pretty well. The acrobats were enchanting. The clowns didn&apos;t put a foot wrong. But then things took a turn for the worse. With a hiss, bang and a whizz everything suddenly went dark. I can tell you a robotic tiger is just as scary, if not scarier, as a real Tiger on the loose. At least you can reason, up to a point, with a real tiger, chuck a leg of lamb its way or something.</p>
+                    <p>All hell broke loose. Androids were trying to take control of the situation, but they had short-circuited as well. Coffee cups were flying all over the place, people panicked and were trying to run to the back door, and the giant wooden horse was rearing up and crushing everything in its path. I spotted a chink of light under the canvas and made my escape.</p>
+                    <p>After a good hard think, a big mug of cocoa, and a nice hot bath I concluded I was right all along. Machines will never replace humans. The papers the following morning recounted the horrific events of the previous evening, the big top in its entirety had become one giant firewall where no-one or nothing could get through and rescue the remaining droids. I think it will be a long time before the Peopleless Circus comes to town again.</p>
+                    <div/>
+                    <hr>
+                    <h1>Comments</h1>
+                    <section class="comment">
+                        <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar">                            Dean N&apos;Mean | 05 October 2025
+                        </p>
+                        <p>People can read this you know.</p>
+                        <p></p>
+                    </section>
+                    <section class="comment">
+                        <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar">                            Freda Wales | 14 October 2025
+                        </p>
+                        <p>You should do a prize draw.</p>
+                        <p></p>
+                    </section>
+                    <section class="comment">
+                        <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar">                            Si Test | 14 October 2025
+                        </p>
+                        <p>A good read, but it&apos;s not going to help my hair grow back is it?</p>
+                        <p></p>
+                    </section>
+                    <section class="comment">
+                        <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar">                            Nat Itoode | 20 October 2025
+                        </p>
+                        <p>I&apos;ve been saying this for years. If I swore less they may have left my blogs up too!</p>
+                        <p></p>
+                    </section>
+                    <section class="comment">
+                        <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar">                            Freda Wales | 21 October 2025
+                        </p>
+                        <p>Could you do a blog in two parts like a cliff hanger? I need some excitement in my life.</p>
+                        <p></p>
+                    </section>
+                    <section class="comment">
+                        <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar">                            <a id="author" href="javascript:alert(1)">test2</a> | 23 October 2025
+                        </p>
+                        <p>test1</p>
+                        <p></p>
+                    </section>
+                    <section class="comment">
+                        <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar">                            <a id="author" href="javascript:alert(1)">test2</a> | 23 October 2025
+                        </p>
+                        <p>test1</p>
+                        <p></p>
+                    </section>
+                    <hr>
+                    <section class="add-comment">
+                        <h2>Leave a comment</h2>
+                        <form action="/post/comment" method="POST" enctype="application/x-www-form-urlencoded">
+                            <input required type="hidden" name="csrf" value="DH8813eiGzyZw6iIQeQCJSnhPLkrTGLl">
+                            <input required type="hidden" name="postId" value="5">
+                            <label>Comment:</label>
+                            <textarea required rows="12" cols="300" name="comment"></textarea>
+                                    <label>Name:</label>
+                                    <input required type="text" name="name">
+                                    <label>Email:</label>
+                                    <input required type="email" name="email">
+                                    <label>Website:</label>
+                                    <input type="text" name="website">
+                            <button class="button" type="submit">Post Comment</button>
+                        </form>
+                    </section>
+                    <div class="is-linkback">
+                        <a href="/">Back to Blog</a>
+                    </div>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+            </div>
+        </div>
+    </body>
+</html>
